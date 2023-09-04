@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .label {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <form action="">
-        <label for="idNome">Nome:</label><br>
-        <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome"><br><br>
-        <label for="idemail">E-mail:</label><br>
-        <input type="text" id="idemail" name="nmemail" value="" placeholder="E-mail"><br><br>
-        <label for="idEmpresa">Empresa/Organização:</label><br>
-        <input type="text" id="idEmpresa" name="nmEmpresa" value="" placeholder="Empresa"><br><br>
-        <label for="idTel.:">Tel:</label><br>
-        <input type="text" id="idTel" name="nmTel" value="" placeholder="Telefone"><br><br>
-        <label for="idNome">Motivo do Contato:</label><br>
-        <input type="text" id="idContato" name="nmContato" value="" placeholder="Motivo do Contato"><br><br>
-        <label for="idMensagem">Mensagem</label><br>
-        <textarea name="nmMensagem" id="idMensagem" cols="30" rows="10"></textarea> <!-- o valor do textarea é a propriedade innerText-->
+        <label for="idNome">Nome:</label>
+        <input type="text" class="label" id="idNome" name="nmNome" value="" placeholder="Nome">
+        <label for="idemail">E-mail:</label>
+        <input type="text" class="label" id="idemail" name="nmemail" value="" placeholder="E-mail">
+        <label for="idEmpresa">Empresa/Organização:</label>
+        <input type="text" class="label" id="idEmpresa" name="nmEmpresa" value="" placeholder="Empresa">
+        <label for="idTel.:">Tel:</label>
+        <input type="text" class="label" id="idTel" name="nmTel" value="" placeholder="Telefone">
+        <label for="idNome">Motivo do Contato:</label>
+        <input type="text" class="label" id="idContato" name="nmContato" value="" placeholder="Motivo do Contato">
+        <label for="idMensagem">Mensagem</label>
+        <textarea name="nmMensagem" id="idMensagem" cols="30" rows="10" class="label"></textarea> <!-- o valor do textarea é a propriedade innerText-->
  
-        <br><br>
+        
         <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>
         <button type="button">Testar</button>
