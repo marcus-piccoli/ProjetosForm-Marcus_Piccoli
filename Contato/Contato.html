@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            margin-right: 800px;
+        }
+        .label {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" class="box">
+
+        <!-- Campo de texto de uma linha -->
+        <fieldset>
+            <legend>Deixe seu recado</legend>
+                <input type="text" class="label" id="idNome" name="nmNome" value="" placeholder="Nome" required>
+
+                <input type="email" class="label" id="idemail" name="nmemail" value="" placeholder="E-mail" required>
+
+                    <input type="text" class="label" id="idEmpresa" name="nmEmpresa" value="" placeholder="Empresa">
+
+                <input type="text" class="label" id="idTel" name="nmTel" value="" placeholder="Telefone">
+
+                <label for="idContato">Motivo do Contato:</label><br>
+                <select name="nmContato" id="idContato" size="4" multiple>
+                    <option value="elogio">Elogio</option>
+                    <option value="problema com produto">Problema com produto</option>
+                    <option value="reclamação">Reclamação</option>
+                    <option value="sugestão">Sugestão</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+            <!-- Campo de texto de várias linhas -->
+                <textarea name="nmMensagem" id="idMensagem" cols="30" rows="10" class="label" placeholder="Mensagem" required></textarea> <!-- o valor do textarea é a propriedade innerText-->
+ 
+            <!-- Botões -->
+                <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

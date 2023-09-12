@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            margin-right: 800px;
+        }
+        .label {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" class="box">
+
+        <!-- Campo de texto de uma linha -->
+        <fieldset>
+            <legend>Cadastro de Aluno</legend>
+                <label for="">Nome</label>
+                <input type="text" class="label" id="idNome" name="nmNome" value="">
+
+                <label for="">Sobrenome</label>
+                <input type="text" class="label" id="idSobrenome" name="nmsobrenome" value="">
+
+                <label for="idData">Data de nascimento</label>
+                <input type="date" class="label" name="nmData" id="idData" min="2000-01-01" max="2017-12-31" >
+                
+                <label for="">Endereço</label>
+                <input type="text" class="label" id="idEndereço" name="nmendereço" value="">
+                
+                <label for="">Nome da Mãe</label>
+                <input type="text" class="label" id="idNomemãe" name="nmnomemãe" value="">
+
+                <label for="">Nome do Pai</label>
+                <input type="text" class="label" id="idNomepai" name="nmnomepai" value="">
+
+                <label for="">E-mail</label>
+                <input type="email" class="label" id="idemail" name="nmemail" value="">
+
+                <label for="">Tel.</label>
+                <input type="email" class="label" id="idtel" name="nmtel" value="">
+                
+                <label for="idInter">Série</label>
+                <input type="number"  class="label" name="nmserie" id="idserie" min="1" max="9" step="0.01" autofocu>
+
+                <label for="">Sexo</label>
+                <br>
+                <input type="radio" name="nmGenero" id="idFem" checked>
+                <label for="idFem">Feminino</label>
+                <br>
+                <input type="radio" name="nmGenero" id="idMasc">
+                <label for="idFmasc">Masculino</label>
+
+                <br><br>
+                <label>Necessidades Especiais:</label><br>
+                <input type="checkbox" name="nmAuditiva" id="idauditiva">
+                <label for="idauditiva">Deficiência Auditiva</label>
+                <br>
+                <input type="checkbox" name="nmMotora" id="idMotora">
+                <label for="idmotora">Deficiência Motora</label> 
+                <br>
+                <input type="checkbox" name="nmVisual" id="idvisual">
+                <label for="idvisual">Deficiência Visual</label>
+                <br>
+                <input type="checkbox" name="nmParalisia" id="idparalisia">
+                <label for="idparalisia">Paralisia Cerebral</label>
+                <br>
+                <input type="checkbox" name="nmautista" id="idautista">
+                <label for="idautista">Perturbação do Espectro Autista</label>
+                <br>
+                <input type="checkbox" name="nmpsico" id="idpsico">
+                <label for="idpsico">Perturbação do Foro Psicológico</label>
+                <br>
+                <input type="checkbox" name="nmAprendizagem" id="idAprendizagem">
+                <label for="idAprendizagem">Perturbação de Aprendizagem</label>
+                <br>
+                <input type="checkbox" name="nmHabilidades" id="idhabilidades">
+                <label for="idHabilidades">Altas Habilidades</label>
+                <br>
+
+            <!-- Botões -->
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar Tela</button>
+        </fieldset>
+    </form>
+</body>
+</html>
